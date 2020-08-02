@@ -1,4 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
 body {
   font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
   margin: 0;
+  height: inherit;
+}
+
+.mainflex {
+  display: flex;
+  height: 100%;
+}
+
+.mainflexitem {
+  padding: 1em;
+}
+
+.heading {
+  flex-basis: 240px;
+}
+
+.cards {
+  flex: 1 0 0;
+  background-color: #eee;
+}
+
+.closing {
+  flex-shrink: 0;
+  flex-grow: 0;
+  flex-basis: 180px;
+  /* All flex commands taken from Chap 7.4 
+  https://info340.github.io/css-layouts.html#flexbox */
+}
+
+.all-cards {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-wrap taken from 
+  https://css-tricks.com/snippets/css/a-guide-to-flexbox/#article-header-id-12 */
+  justify-content: center;
+}
+
+.single-card {
+  flex: 0 0 250px;
+  background-color: white;
+  margin: .5rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .16);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .23);
+/* Box-shadow taken from https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow?v=b
+offset-x | offset-y | blur-radius | color */
+}
+
+.single-card img {
+  border-radius: 10px 10px 0 0;
+}
+
+.single-card p {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+}
+
+.bigflex {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 0;
 }
