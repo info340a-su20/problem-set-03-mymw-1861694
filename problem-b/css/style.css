@@ -1,0 +1,96 @@
+/*Extra small screens, less than 598px*/
+body {
+    margin: .5rem;
+    background-color: #93b8d7;
+    color: white;
+}
+
+nav a {
+    color: white;
+    size: 2.5rem;
+    margin-right: .5em;
+}
+
+#social-links {
+    display: none;
+}
+
+main {
+    text-align: center;
+    font-family: 'Kaushan Script', fantasy;
+    margin-top: 23vh;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 2em;
+}
+
+footer {
+    display: none;
+}
+
+/*Small screens, more than 598px*/
+@media (min-width: 598px) {
+    #social-links {
+        display: block;
+    }
+
+    #hamburger-menu {
+        display: none;
+    }
+}
+
+/*Medium screens, more than 768px*/
+@media (min-width: 768px) {
+    body {
+        background-image: url("../img/splash-md.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+
+    html {
+        height: 100%;
+    }
+
+    footer {
+        display: block;
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+    }
+
+    main {
+        text-shadow: 1px 1px #153c43;
+    }
+}
+
+/*Large screens, more than 992px*/
+@media (min-width: 992px) {
+    body {
+        background-image: url("../img/splash-lg.jpg");
+    }   
+    
+    nav a {
+        size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+}
+
+/*Extra-large screens, more than 992px*/
+@media (min-width: 1200px) {
+    body {
+        background-image: url("../img/splash-xl.jpg");
+    }   
+}

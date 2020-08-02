@@ -17,7 +17,7 @@ body {
   height: 100%;
 }
 
-.mainflexitem {
+.mainflex > .mainflexitem {
   padding: 1em;
 }
 
