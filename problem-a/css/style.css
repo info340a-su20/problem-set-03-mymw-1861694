@@ -10,6 +10,8 @@ body {
   font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
   margin: 0;
   height: inherit;
+  display: flex;
+  flex-direction: column;
 }
 
 .mainflex {
@@ -17,7 +19,7 @@ body {
   height: 100%;
 }
 
-.mainflex > .mainflexitem {
+section {
   padding: 1em;
 }
 
@@ -26,7 +28,7 @@ body {
 }
 
 .cards {
-  flex: 1 0 0;
+  flex: 1;
   background-color: #eee;
 }
 
@@ -51,8 +53,8 @@ body {
   background-color: white;
   margin: .5rem;
   border-radius: 10px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, .16);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, .23);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16),
+              0 1px 3px rgba(0, 0, 0, 0.23);
 /* Box-shadow taken from https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow?v=b
 offset-x | offset-y | blur-radius | color */
 }
@@ -62,15 +64,9 @@ offset-x | offset-y | blur-radius | color */
 }
 
 .single-card p {
-  margin-top: .5rem;
-  margin-bottom: .5rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-
+  padding: .5rem 1rem;
 }
 
-.bigflex {
-  display: flex;
-  flex-direction: column;
-  flex: 1 0 0;
+main {
+  flex: 1;
 }
